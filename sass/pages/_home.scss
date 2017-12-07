@@ -1,0 +1,14 @@
+#body{
+  background-color: green;
+  display: block;
+  width: 300px;
+  margin: 20% auto;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  .item{
+    position: absolute;
+    top:0;
+  left: 0;
+  }
+}
