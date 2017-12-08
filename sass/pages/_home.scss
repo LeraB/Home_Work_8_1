@@ -11,12 +11,29 @@
     top: 0;
     left: 0;
     display: inline-block;
-    background-color: rgba(34, 34, 34, .60);
-    border-radius: 5px;
-    p{
-      padding: 5px 10px;
+     .content{
+float: left;
+       background-color: rgba(34, 34, 34, .60);
+       border-radius: 5px;
+.close{
+  display: none;
+}
+       p{
+         padding: 5px 10px;
       color: white;
       margin: 0;
     }
+  }
+  }
+  .active{
+.close{
+  background-color: rgba(34, 34, 34, .60);
+  border-radius: 5px;
+  float: left;
+  background-image: ;
+  width: 20px;
+  height: 28px;
+  display: block;
+}
   }
 }
