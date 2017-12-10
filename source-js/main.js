@@ -3,8 +3,7 @@ var input = document.getElementsByTagName("body"),
 
 document.getElementById("body").addEventListener("dblclick", function (event) {
     var newItem_li = document.createElement("div");
-    newItem_li.innerHTML = '<div class="content"><p>Bla</p></div>';
-    newItem_li.appendChild(document.createElement("div")).classList.add('close');
+    newItem_li.innerHTML = '<div class="content"><p>Bla</p></div> <div class="close" onclick="del(this)"></div>';
     i++;
     newItem_li.id = i;
     newItem_li.classList.add('item');
@@ -15,12 +14,17 @@ document.getElementById("body").addEventListener("dblclick", function (event) {
 })
 
 document.getElementById("body").addEventListener("click", function (event) {
-    if (!event.target.parentNode.parentNode.classList.contains('active')) {
+    if ((event.target.parentNode.parentNode) && (!event.target.parentNode.parentNode.classList.contains('active'))) {
         event.target.parentNode.parentNode.classList.add('active');
+
     } else {
-        event.target.parentNode.parentNode.classList.remove('active');
+        if (event.target.parentNode.parentNode) {
+            event.target.parentNode.parentNode.classList.remove('active');
+        }
     }
 
-    console.log(event.target.parentNode);
 })
 
+function del(el) {
+    el.parentNode.remove();
+}
