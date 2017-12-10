@@ -7,6 +7,7 @@
   overflow: hidden;
   position: relative;
   .item {
+    cursor: pointer;
     position: absolute;
     top: 0;
     left: 0;
@@ -26,7 +27,7 @@
     }
   }
   .active {
-    .close {
+     .close {
       background-color: rgba(34, 34, 34, .60);
       border-radius: 5px;
       float: left;
