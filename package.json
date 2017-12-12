@@ -23,7 +23,5 @@
     "sass",
     "gulp",
     "npm"
-  ],
-  "author": "eKreative",
-  "license": "MIT"
+  ]
 }

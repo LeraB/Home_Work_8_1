@@ -45,6 +45,4 @@ gulp.task('watch', ['styles', 'js'], function () {
     gulp.watch('./source-js/**/*.js', ['js']);
 });
 
-gulp.task('default', ['styles', 'js'], function () {
-
-});
+gulp.task('default', ['styles', 'js']);
