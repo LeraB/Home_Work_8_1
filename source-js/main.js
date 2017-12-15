@@ -13,7 +13,7 @@ wraper.addEventListener("dblclick", function (event) {
     newItem_li.style.left = event.clientX - document.getElementById("body").offsetLeft - 20 + "px";
 
     var clRect = wraper.getBoundingClientRect()
-    
+
     if (newItem_li.offsetLeft > wraper.offsetWidth - newItem_li.offsetWidth) {
         newItem_li.style.left = wraper.offsetWidth - newItem_li.offsetWidth + 'px'
     }
@@ -21,8 +21,6 @@ wraper.addEventListener("dblclick", function (event) {
         newItem_li.style.top = wraper.offsetHeight - newItem_li.offsetHeight + 'px'
     }
 
-
-   
 
     function move(event) {
 
@@ -37,7 +35,7 @@ wraper.addEventListener("dblclick", function (event) {
         }
     }
 
-    newItem_li.ondragstart = function() {
+    newItem_li.ondragstart = function () {
         return false;
     };
     newItem_li.onmousedown = function (e) {
